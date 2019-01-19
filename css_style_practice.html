@@ -1,0 +1,71 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+	<head>
+		<meta charset="UTF-8">
+		<title>CSS3 Styling Elements</title>
+		<style>
+
+h1	{
+	color:blue!important;		/*Blue*/
+	background-color: #AED6F1;	/*Lighter Blue*/
+}
+
+h1	{
+	font-family: Times ;
+	text-align: center;
+}
+
+@font-face	{
+	font-family:SouthernAire;
+	src:url('SouthernAire_Personal_Use_Only.ttf');
+}
+
+h2	{
+	font-variant:small-caps;
+	color:blue;
+}
+
+p {
+	color:green; font-family:"Comic Sans MS";
+}
+
+		</style>
+	</head>
+
+	<body>
+
+		<header>
+			<h1 style="font-size: 60; font-family: Cambria;">Hello</h1>
+			<p>This is a file.</p>
+
+			<h1>Hello again!</h1>
+			<p>As you can see, all headers are blue.</p>
+		</header>
+
+		<h1>For clarification...</h1>
+		<p>If one selector has more than one rule at the same file, the last file read is always considered and can overrides previous elements.</p>
+		<p>The "!important" element prevents this from happening by giving the included element precedence</p>
+
+		<h1>Font-Family</h1>
+		<p>If the font-family has multiple different fonts separated by commas, it means that if the browser does not support the first font on the list, it can use the second alternative font, and if not, the third. If it does not have any of them, the font used will be of the browser default.</p>
+		<p>Serif: with fancy edges<br>Sans-serif: no fancy edges (preferred as it is easier to read)</p>
+		<p>If you downloaded or created your own font-family, use src:url as seen in the code to determine the source of the font file that you want to use.</p>
+		<p>Don't forget that if the name of the font-family is of multiple words, you have to put it in quotes as seen in the code.</p>
+		<p style="color:red">QUESTION!: Does the @font-face rule only apply when the font file is in the same folder as the HTML5 file? If not, how can I direct it to the folder that the font file is in?</p>
+
+		<h1>How to look at the design of a web page</h1>
+		<p>Go to a site and right click, choose Inspect Element and try tinkering with the code of the web page</p>
+
+		<h1>Contrast</h1>
+		<p>Make sure that the text is easily readable to those accessing the site. To make sure of this use the following sites:</p>
+		<a href="http://wave.webaim.org">http://wave.webaim.org</a><br>
+		<a href="http://webaim.org/resources/contrastchecker">http://webaim.org/resources/contrastchecker</a>
+
+		<h2 style="background-color: #AED6F1;text-align: center;font-family: Tekton Pro">Testing the font-variant</h2>
+		<p>Font-variant is known as a CSS3 property under the category of text-transform, similar to text-align.</p>
+
+	</body>
+	
+</html>
